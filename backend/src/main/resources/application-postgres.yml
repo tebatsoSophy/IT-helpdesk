@@ -1,0 +1,12 @@
+# Activate with SPRING_PROFILES_ACTIVE=postgres when you leave H2 behind.
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/helpdesk}
+    username: ${SPRING_DATASOURCE_USERNAME:helpdesk}
+    password: ${SPRING_DATASOURCE_PASSWORD:secret}
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update   # replace with Flyway migrations + "validate" before going to production

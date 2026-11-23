@@ -1,0 +1,17 @@
+# Backend
+backend/target/
+backend/data/
+backend/uploads/
+*.mv.db
+*.trace.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local config and IDE files
+.env
+.idea/
+*.iml
+.vscode/
+.DS_Store
